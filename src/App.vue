@@ -4,6 +4,7 @@
       v-model="drawer"
       app
       clipped
+      v-if="creator == true"
     >
       <v-list dense>
         <v-list-item
@@ -29,7 +30,7 @@
       color="deep-purple lighten-1"
       dense
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
       <!-- <img src="./assets/boka_logo_sm.png" alt="Boka Logo" class="mr-5 logo"> -->
       <v-toolbar-title class="mr-12 align-center">
         <span class="subtitle-1 white--text"><strong>BOKA</strong><span>PROFESSIONALS</span></span>
@@ -58,13 +59,7 @@
 
     <v-content>
       <v-container class="fill-height">
-        <v-row
-          justify="center"
-          align="center"
-        >
-          <v-col class="shrink">
-          </v-col>
-        </v-row>
+        <router-view/> 
       </v-container>
     </v-content>
   </v-app>
@@ -79,6 +74,7 @@
       drawer: null,
       message: 5,
       show: false,
+      creator: false,
       items: [
         { icon: 'mdi-view-dashboard', text: 'Dashboard' },
         { icon: 'mdi-account-box-multiple', text: 'Clients' },
