@@ -8,7 +8,7 @@
     <v-row justify="center" align="center">
       <v-col class="text-center shrink" v-for="item in items" :key="item.text">
         <v-card 
-            to="/content-type" 
+            to="/creators" 
             width="300px"  >
             <v-img :src="item.photo"></v-img>
           <h3 class="pa-2 text-center">{{item.text}}</h3>
