@@ -74,7 +74,7 @@
       drawer: null,
       message: 5,
       show: false,
-      creator: false,
+      creator: true,
       items: [
         { icon: 'mdi-view-dashboard', text: 'Dashboard' },
         { icon: 'mdi-account-box-multiple', text: 'Clients' },
