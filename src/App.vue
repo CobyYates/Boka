@@ -47,7 +47,6 @@
         :value="messages"
         color="red"
         overlap
-        dot
       >
         <v-icon medium class="white--text">mdi-bell-outline</v-icon>
       </v-badge>
@@ -73,7 +72,7 @@
     },
     data: () => ({
       drawer: null,
-      message: 5,
+      messages: 5,
       show: false,
       creator: true,
       items: [
