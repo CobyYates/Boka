@@ -2,18 +2,18 @@
   <v-container>
     <v-row justify="center" align="center">
       <v-col>
-        <h1 class="cyan--company headline company-center">
+        <h1 class="cyan--text headline text-center">
           Here are your {{ creatorType }}
         </h1>
       </v-col>
     </v-row>
-    <v-row justify="center" align="center">
+    <v-row justify="center" align="center" class="pb-12">
       <v-col
-        class="company-center shrink"
+        class="shrink"
         v-for="creator in creators"
         :key="creator.id"
       >
-        <v-card class="mx-auto" max-width="450" min-width="450" outlined>
+        <v-card class="mx-auto" max-width="450" min-width="450" :elevation="6" outlined>
           <v-list-item three-line>
             <v-list-item-content>
               <v-list-item-title class="title mb-0">{{ creator.company }}</v-list-item-title>
@@ -30,20 +30,18 @@
               </div>              
               <v-list-item-subtitle class="mb-1">{{ creator.description }}</v-list-item-subtitle>
             </v-list-item-content>
-
-            <v-list-item-avatar
+                <v-list-item-avatar
               style="border-radius: 50px;"
               tile
               size="70"
               class="ml-1"
               color="grey"
               ><v-img style="border-radius: 50px;" :src="creator.photo"></v-img
-            ></v-list-item-avatar>
+            ></v-list-item-avatar>            
           </v-list-item>
 
           <v-card-actions class="py-0">
-            <v-btn text class="pb-3">Button</v-btn>
-            <v-btn text class="pb-3">Button</v-btn>
+            <!-- <v-btn text class="pb-3">Button</v-btn> -->
             <v-spacer/>
             <v-rating
                 :value="0"
@@ -69,6 +67,7 @@ export default {
     creators: [
       {
         company: "Making Moments Photo",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -84,6 +83,7 @@ export default {
       },
       {
         company: "Behind the Lense Photography",
+        location: "American Fork",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -99,6 +99,7 @@ export default {
       },
       {
         company: "Darkroom Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -114,6 +115,7 @@ export default {
       },
       {
         company: "Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -129,6 +131,7 @@ export default {
       },
       {
         company: "Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -144,6 +147,7 @@ export default {
       },
       {
         company: "Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -159,6 +163,7 @@ export default {
       },
       {
         company: "Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -174,6 +179,7 @@ export default {
       },
       {
         company: "Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -189,6 +195,7 @@ export default {
       },
       {
         company: "Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -204,6 +211,7 @@ export default {
       },
       {
         company: "Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },
@@ -219,6 +227,7 @@ export default {
       },
       {
         company: "Photography",
+        location: "Provo",
         to: "",
         reviews: [
           { review: "", rating: "4", reviewer: { name: "", photo: "" } },

@@ -11,7 +11,8 @@
             to="/content-type" 
             width="400px" 
             v-for="item in items" 
-            :key="item.text">
+            :key="item.text"
+            :elevation="6">
           <h3 class="pa-6 mt-9 text-center">{{item.text}}</h3>
         </v-card>
       </v-col>

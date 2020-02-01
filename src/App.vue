@@ -11,6 +11,7 @@
           v-for="item in items"
           :key="item.text"
           link
+          :to="item.to"
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -76,13 +77,13 @@
       show: false,
       creator: true,
       items: [
-        { icon: 'mdi-view-dashboard', text: 'Dashboard' },
-        { icon: 'mdi-account-box-multiple', text: 'Clients' },
-        { icon: 'mdi-forum', text: 'Chat' },
-        { icon: 'mdi-calendar-month', text: 'Calendar' },
-        { icon: 'mdi-check', text: 'ToDo' },
-        { icon: 'mdi-settings', text: 'Account' },
-        { icon: 'mdi-file-document-edit', text: 'Contract' },
+        { icon: 'mdi-view-dashboard', text: 'Dashboard', to: "/dashboard" },
+        { icon: 'mdi-account-box-multiple', text: 'Clients', to: "/clients" },
+        { icon: 'mdi-forum', text: 'Chat', to: "/chat" },
+        { icon: 'mdi-calendar-month', text: 'Calendar', to: "/calendar" },
+        { icon: 'mdi-check', text: 'ToDo', to: "/to-do" },
+        { icon: 'mdi-settings', text: 'Account', to: "/account" },
+        { icon: 'mdi-file-document-edit', text: 'Contract', to: "/contract" },
       ]
     }),
     created () {

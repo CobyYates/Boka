@@ -7,10 +7,10 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col class="shrink">
-        <v-card @click="creator = true" width="400px">
+        <v-card @click="creator = true" width="400px" :elevation="6">
           <h3 class="pa-6 mt-9 text-center">I'm a Creator</h3>
         </v-card>
-        <v-card class="mt-10" @click="creator = false" width="400px" to="/creator-type">
+        <v-card class="mt-10" @click="creator = false" width="400px" to="/creator-type" :elevation="6">
           <h3 class="pa-6 text-center">I'm Looking for a Creator</h3>
         </v-card>
       </v-col>
