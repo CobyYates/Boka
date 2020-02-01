@@ -8,7 +8,7 @@ import Chat from './components/Dashboard/Chat.vue'
 import Calendar from './components/Dashboard/Calendar.vue'
 import ToDo from './components/Dashboard/ToDo.vue'
 import Account from './components/Dashboard/Account.vue'
-import Contracts from './components/Dashboard/Contracts.vue'
+// import Contracts from './components/Dashboard/Contracts.vue'
 
 export const routes = [
     { path: '', component: Type },
@@ -21,6 +21,6 @@ export const routes = [
     { path: '/calendar', component: Calendar },
     { path: '/to-do', component: ToDo },
     { path: '/account', component: Account },
-    { path: '/contracts', component: Contracts },
+    // { path: '/contracts', component: Contracts },
     // { path: '', component:  },
 ]
