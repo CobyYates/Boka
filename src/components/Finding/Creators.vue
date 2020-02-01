@@ -3,7 +3,7 @@
     <v-row justify="center" align="center">
       <v-col>
         <h1 class="cyan--text headline text-center">
-          Here are your {{ creatorType }}
+          Here are your {{ }}
         </h1>
       </v-col>
     </v-row>
@@ -44,7 +44,7 @@
             <!-- <v-btn text class="pb-3">Button</v-btn> -->
             <v-spacer/>
             <v-rating
-                :value="0"
+                :value=0
                 color="pink lighten-2"
                 background-color="pink lighten-2"
                 dense
@@ -70,12 +70,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/female/20.jpg",
         description:
@@ -86,12 +86,12 @@ export default {
         location: "American Fork",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/female/2.jpg",
         description:
@@ -102,12 +102,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/female/3.jpg",
         description:
@@ -118,12 +118,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/male/8.jpg",
         description:
@@ -134,12 +134,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/male/6.jpg",
         description:
@@ -150,12 +150,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/male/16.jpg",
         description:
@@ -166,12 +166,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/male/20.jpg",
         description:
@@ -182,12 +182,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/female/23.jpg",
         description:
@@ -198,12 +198,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/female/12.jpg",
         description:
@@ -214,12 +214,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/female/13.jpg",
         description:
@@ -230,12 +230,12 @@ export default {
         location: "Provo",
         to: "",
         reviews: [
-          { review: "", rating: "4", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3.5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "5", reviewer: { name: "", photo: "" } },
-          { review: "", rating: "3", reviewer: { name: "", photo: "" } }
+          { review: "", rating: 4, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3.5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 5, reviewer: { name: "", photo: "" } },
+          { review: "", rating: 3, reviewer: { name: "", photo: "" } }
         ],
         photo: "https://uinames.com/api/photos/female/10.jpg",
         description:

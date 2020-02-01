@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="center" align="center">
         <v-col>
-            <h1 class="cyan--text headline text-center">What type of {{creatorType}} do you need?</h1>
+            <h1 class="cyan--text headline text-center">What type of {{}} do you need?</h1>
         </v-col>
     </v-row>
     <v-row justify="center" align="center">
