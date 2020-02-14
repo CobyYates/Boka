@@ -21,7 +21,7 @@
             <template v-slot:activator="{ on }">
             <v-progress-linear v-on="on" :color="paidColor(item.payments/item.totalPayment)" :value='((item.payments/item.totalPayment) * 100)'></v-progress-linear>
             </template>
-            <span>{{item.payments}}/{{item.totalPayment}}</span>
+            <span>${{item.payments}} / ${{item.totalPayment}}</span>
         </v-tooltip>
     </template>
 
