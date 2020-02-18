@@ -82,7 +82,7 @@
         { icon: 'mdi-calendar-month', text: 'Calendar', to: "/calendar" },
         { icon: 'mdi-check', text: 'ToDo', to: "/to-do" },
         { icon: 'mdi-settings', text: 'Account', to: "/account" },
-        { icon: 'mdi-file-document-edit', text: 'Contract', to: "/contract" },
+        { icon: 'mdi-file-document-edit', text: 'Contracts', to: "/contracts" },
       ]
     }),
     created () {
