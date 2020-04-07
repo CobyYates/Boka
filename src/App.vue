@@ -38,25 +38,32 @@
       </v-toolbar-title>
       <v-spacer />
       <v-row
+        v-if="!this.userIsAuthenticated"
         align="end"
-        style="max-width: 120px"
-        class="d-flex align-center justify-space-between pr-7"
-      >
-      <v-badge
-        :content="messages"
-        :value="messages"
-        color="red"
-        overlap
-      >
-        <v-icon medium class="white--text">mdi-bell-outline</v-icon>
-      </v-badge>
-      <v-avatar>
-        <img
-          src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
-      </v-avatar>
+        style="max-width: 250px"
+        class="d-flex justify-end pr-4">
+        <v-btn to="/sign-up" class="mr-4" color="purple darken-4" dark>Sign Up</v-btn>
+        <v-btn to="/sign-in" color="yellow">Sign In</v-btn>
+      </v-row>
+      <v-row
+        v-if="this.userIsAuthenticated"
+        align="end"
+        style="max-width: 250px"
+        class="d-flex justify-end pr-4">
+        <v-badge
+          :content="messages"
+          :value="messages"
+          class="mr-6"
+          color="red"
+          overlap>
+          <v-icon large class="white--text">mdi-bell-outline</v-icon>
+        </v-badge>
+        <v-avatar>
+          <img
+            src="https://avatars1.githubusercontent.com/u/27262239?s=460&v=4" alt="John">
+        </v-avatar>
       </v-row>
     </v-app-bar>
-
     <v-content>
       <v-container class="fill-height">
         <router-view/> 
@@ -69,6 +76,8 @@
   export default {
     props: {
       source: String,
+    },
+    components: {
     },
     data: () => ({
       drawer: null,
@@ -85,8 +94,10 @@
         { icon: 'mdi-file-document-edit', text: 'Contracts', to: "/contracts" },
       ]
     }),
-    created () {
-      // this.$vuetify.theme.dark = true
+    computed: {
+      userIsAuthenticated () {
+        return this.$store.getters.user !== null && this.$store.getters.user !== undefined
+      }
     },
   }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <v-container class="shrink">
     <v-row>
-      <v-col class="d-flex justify-space-between px-0 mb-4">
+      <v-col class="d-flex justify-space-between px-0 mb-4 mx-auto" cols="12">
         <v-card
           v-for="card in cards"
           :key="card.title"
@@ -29,8 +29,8 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
-        <v-card :elevation="6" class="mx-auto text-center" color="blue" dark max-width="600">
+      <v-col cols="6">
+        <v-card :elevation="6" class="mx-auto text-center" color="blue" dark>
           <v-card-text>
             <v-sheet color="rgba(0, 0, 0, .12)">
               <v-sparkline
@@ -52,7 +52,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col>
+      <v-col cols="6">
           <v-card :elevation="6" height="400" class="d-flex align-center justify-center" color="green">
               <div class="text-center">
                   <h2 class="white--text">CHAT Window</h2>
@@ -102,7 +102,7 @@ export default {
     ],
     value: [
         423,
-        446,
+        450,
         675,
         510,
         590,

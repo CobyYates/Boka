@@ -101,7 +101,7 @@
           class="elevation-3 mx-12 my-6 pl-0 ml-0"
         >
           <template v-slot:item.checkbox="{ item }">
-            <v-checkbox  color="teal lighten-2"></v-checkbox>
+            <v-checkbox v-model="item.status" color="teal lighten-2"></v-checkbox>
           </template>
 
           <template v-slot:item.action="{ item }">
@@ -130,11 +130,6 @@ export default {
     headers: [
       { text: "", value: `checkbox`, sortable: false },
       { text: "Todo", value: "todo", sortable: false },
-      //   { text: "Email", value: "email", sortable: false },
-      //   { text: "Job", value: "job", sortable: false },
-      //   { text: "Payments", value: "progress", sortable: false },
-      //   { text: "SignUp Date", value: "signUp", sortable: false },
-      //   { text: "Accepted", value: "approval" },
       { text: "Actions", value: "action", sortable: false }
     ],
     clients: [],
@@ -281,8 +276,5 @@ export default {
 </script>
 
 <style>
-/* .filters {
-        border-radius: 8;
-        border: .5px grey solid;
-    } */
+  
 </style>
