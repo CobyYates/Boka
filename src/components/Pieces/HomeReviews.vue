@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <p class="text-center display-1">SOME OF OUR CUSTOMERS</p>
       <v-row>
         <v-col cols="2" v-for="review in reviews" :key="review.i" class="mx-auto">
           <div class="text-center d-flex flex-column justify-center">
@@ -7,7 +8,8 @@
               <p class="title mt-3 mb-0">{{ review.name }}</p>
               <v-rating 
                 color="yellow darken-3"
-                value="5"/>
+                value="5"
+                readonly/>
               <v-text>{{review.text}}</v-text>
           </div>
         </v-col>

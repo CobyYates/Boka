@@ -33,8 +33,8 @@
     >
       <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
       <!-- <img src="./assets/boka_logo_sm.png" alt="Boka Logo" class="mr-5 logo"> -->
-      <v-toolbar-title class="mr-12 align-center">
-        <span class="subtitle-1 white--text" @click="this.$router.push('/')"><strong>BOKA</strong><span>PROFESSIONALS</span></span>
+      <v-toolbar-title class="mr-12 align-center logo" @click="home">
+        <span class="subtitle-1 white--text"><strong>BOKA</strong><span>PROFESSIONALS</span></span>
       </v-toolbar-title>
       <v-spacer />
       <v-row
@@ -99,8 +99,16 @@
         return this.$store.getters.user !== null && this.$store.getters.user !== undefined
       }
     },
+    methods: {
+      home() {
+        this.$router.push('/')
+      }
+    }
   }
 </script>
 
-<style lang="stylus" scoped>
+<style scoped>
+.logo {
+  cursor: pointer;
+}
 </style>
