@@ -46,6 +46,12 @@
     </v-container>
 
     <v-row>
+        <v-col>
+            <CTA />
+        </v-col>
+    </v-row>
+
+    <v-row>
       <div class="d-flex justify-center justify-space-between mx-auto">
         <Examples />
       </div>
@@ -65,11 +71,13 @@
 import Footer from "../components/Pieces/Footer";
 import Reviews from "../components/Pieces/HomeReviews";
 import Examples from "../components/Pieces/Examples";
+import CTA from "../components/Pieces/CTA";
 export default {
   components: {
     Footer,
     Reviews,
     Examples,
+    CTA
   },
   data() {
     return {
@@ -138,7 +146,7 @@ export default {
   box-sizing: border-box;
 }
 .slider-text1 {
-  animation: slide 8s linear infinite;
+  animation: slide 10s linear infinite;
 }
 @keyframes slide {
   0% {
