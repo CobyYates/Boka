@@ -34,7 +34,7 @@
       <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
       <!-- <img src="./assets/boka_logo_sm.png" alt="Boka Logo" class="mr-5 logo"> -->
       <v-toolbar-title class="mr-12 align-center">
-        <span class="subtitle-1 white--text"><strong>BOKA</strong><span>PROFESSIONALS</span></span>
+        <span class="subtitle-1 white--text" @click="this.$router.push('/')"><strong>BOKA</strong><span>PROFESSIONALS</span></span>
       </v-toolbar-title>
       <v-spacer />
       <v-row
@@ -65,8 +65,8 @@
       </v-row>
     </v-app-bar>
     <v-content>
-      <v-container class="fill-height">
-        <router-view/> 
+      <v-container fluid class="mx-0 px-0 py-0">
+        <router-view class="px-0 py-0 mx-0"/> 
       </v-container>
     </v-content>
   </v-app>
